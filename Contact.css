@@ -1,0 +1,97 @@
+:root {
+  --cyan: hsl(180, 62%, 55%);
+  --brown: hsl(0, 60%, 41%);
+  --blue: hsl(212, 86%, 64%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--veryLightGray);
+}
+
+.box p {
+  color: var(--grayishBlue);
+}
+
+.box {
+  border-radius: 10px;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  padding: 10px;
+  margin: 30px;
+}
+
+img {
+  float: right;
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 600px) and (min-width: 300px) {
+  .box {
+    text-align: center;
+    height: 180px;
+  }
+}
+
+.brown {
+  border-top: 3px solid var(--brown);
+}
+
+.blue {
+  border-top: 3px solid var(--blue);
+}
+
+h1 {
+  color: var(--varyDarkBlue);
+  font-weight: var(--weight3);
+}
+
+@media (min-width: 950px) {
+  .row1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.map-responsive {
+  overflow: hidden;
+
+  padding-bottom: 26%;
+
+  position: relative;
+
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+
+  top: 0;
+
+  height: 100%;
+
+  width: 100%;
+
+  position: absolute;
+}
+#map {
+  width: 100%;
+
+  height: 400px;
+
+  background-color: grey;
+}
